@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    overflow-y: scroll;
+}
+
+.left {
+    width: 25%;
+    padding: 7px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.right {
+    width: 75%;
+    padding: 7px;
+    color: whitesmoke;
+    background-color: black;
+}
+.nav{
+    display: flex;
+    gap: 20px;
+}
+
+.home ul li {
+    list-style: none;
+    width: 18px;
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.logo {
+    display: flex;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.heading img {
+    width: 25px;
+}
+
+.library {
+    min-height: 70vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    gap: 2px 30px;
+    height: 90px;
+    width: 90%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer a {
+    width: 50%;
+    color: gray;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header>* {
+    padding: 5px;
+}
+
+.button {
+    width: 200px;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    padding-left: 30px;
+}
+.right-container{
+    margin: 3px;
+    padding: 10px;
+    width: 170px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+}
+
+.round-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.square-img{
+    width: 170px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.spotify-playlist {
+    background-color: rgb(14, 14, 14);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.playlist-container {
+    position: relative;
+    margin: 3px;
+}
+
+.playlist-play {
+    opacity: 0;
+    width: 35px;
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.artist-play {
+    opacity: 0;
+    width: 35px;
+    position: absolute;
+    top: 110px;
+    left: 120px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.main {
+    height: 69vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main::-webkit-scrollbar {
+    width: 10px;
+}
+
+.main::-webkit-scrollbar-track {
+    background: #353535;
+    border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background: #404c4d;
+    border-radius: 10px;
+}
+
+/* Scrollbar handle on hover */
+.main::-webkit-scrollbar-thumb:hover {
+    background: #496a6a;
+}
+
+.playbar {
+    width: 73%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 100px; */
+    background-color: #151515;
+    border-radius: 10px;
+    position: fixed;
+}
+.control{
+    width: 23%;
+    min-width: 150px; /* Prevents shrinking too much */
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; /* Centers images vertically */
+    gap: 10px; /* Adds spacing between images */
+    position: relative;
+}
+
+#pause {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+}
+
+#play {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+}
+
+#previous {
+    position: absolute;
+    left: 21px;
+    bottom: 10px;
+}
+
+#next {
+    position: absolute;
+    left: 165px;
+    bottom: 10px;
+}
+.seek{
+    width: 77%;
+    height: 50px;
+    position: relative;
+}
+
+#seekbar {
+    height: 3px;
+    background-color: white;
+    width: 659px;
+    position: absolute;
+    top: 37px;
+    right: 28px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#seek-circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: left 1s;
+}
+
+.song-list {
+    font-size: 12px;
+    background-color: rgb(29, 31, 32);
+    height: 40vh;
+    color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+.current-song {
+    width: 661px;
+    height: 22px;
+    background-color: #30393c;
+    position: absolute;
+    top: 8px;
+    right: 26px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger{
+    display: none;
+}
+
+@media (min-width:930px) and (max-width:1250px) {
+
+    .left{
+        position: absolute;
+        left: -100%;
+        z-index: 1;
+        transition: all 0.5s;
+        width: 55%;
+    }
+    .right{
+        width: 100vw;
+        position: absolute;
+
+    }
+    .playbar {
+        width: 99vw;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #151515;
+        position: fixed;
+        margin-right: 7px;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+@media (min-width:320px) and (max-width:929px) {
+    .left{
+        position: absolute;
+        left: -100%;
+        z-index: 1;
+        transition: all 0.5s;
+        width: 55%;
+    }
+    .right{
+        width: 100vw;
+        position: absolute;
+    }
+    .hamburger{
+        display: block;
+    }
+    .nav{
+        gap: 0px;
+    }
+    .right-container{
+        width: 89px;
+        height: 195px;
+    }
+    .card-container{
+        padding-left: 16px;
+    }
+    .round-img{
+        width: 89px;
+        height: 89px;
+    }
+    .spotify-playlist{
+        padding: 0px;
+    }
+    .square-img{
+        width: 90px;
+        height: 60px;
+    }
+    .playbar{
+        width: 100vw;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+    }
+    .control{
+        height: 45%;
+    }
+    #pause {
+        height: 20px;
+        width: 20px;
+    }
+    
+    #play {
+        height: 20px;
+        width: 20px;
+    }
+    
+    #previous {
+        height: 20px;
+        width: 20px;
+    }
+    
+    #next {
+        height: 20px;
+        width: 20px;
+    }
+    .seek{
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #seekbar{
+        width: 71vw;
+    }
+    .current-song{
+        width: 71vw;
+    }
+}

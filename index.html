@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="utility.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left border bg-black">
+            <!-- <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button> -->
+            <div class="home bg-grey round-border m-2 p-2 g-fonts">
+                <div class="logo invert"><img src="logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img id="home" class="invert" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey round-border m-2 p-2">
+                <div class="logo g-fonts heading">
+                    <img class="invert" src="library.svg" alt="library">
+                    <h4>Your Library</h4>
+                </div>
+                <div class="song-list g-fonts">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer g-fonts">
+                    <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right border">
+            <div class="header bg-grey round-border m-2 p-2 g-fonts">
+                <div class="nav">
+                    <img src="   https://cdn-icons-png.flaticon.com/512/10486/10486773.png " width="20" height="20"
+                        class="img-small hamburger invert">
+                    <img src="   https://cdn-icons-png.flaticon.com/512/2722/2722991.png " width="20" height="20"
+                        class="img-small invert">
+                    <img src="   https://cdn-icons-png.flaticon.com/512/2989/2989988.png " width="20" height="20"
+                        class="img-small invert">
+                </div>
+                <div class="button">
+                    <button class="black-btn">SignUp</button>
+                    <button class="white-btn">Login</button>
+                </div>
+            </div>
+            <div class="main bg-grey round-border m-2 p-2 g-fonts">
+                <div class="artists">
+                    <h3 class="right-heading">Popular artists</h3>
+                    <div class="artist-container card-container">
+                        <div class="right-container">
+                            <img class="round-img"
+                                src="https://cdn.starclinch.in/artist/pritam/pritam-4.jpg?width=1920&quality=75&format=webp&flop=false"
+                                alt="">
+                            <div class="artist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Circle -->
+                                    <circle cx="50" cy="50" r="45" fill="rgb(11, 157, 177)" stroke="rgb(11, 157, 177)"
+                                        stroke-width="3" />
+                                    <!-- Triangle Play Button -->
+                                    <polygon points="40,30 40,70 70,50" fill="black" />
+                                </svg>
+                            </div>
+                            <h4>Pritam</h4>
+                            <p>Artist</p>
+                        </div>
+                        <div class="right-container">
+                            <img class="round-img"
+                                src="https://images.firstpost.com/wp-content/uploads/2022/04/pjimage-2022-04-25T103425.290.jpg?im=FitAndFill=(596,336)"
+                                alt="">
+                            <div class="artist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Circle -->
+                                    <circle cx="50" cy="50" r="45" fill="rgb(11, 157, 177)" stroke="rgb(11, 157, 177)"
+                                        stroke-width="3" />
+                                    <!-- Triangle Play Button -->
+                                    <polygon points="40,30 40,70 70,50" fill="black" />
+                                </svg>
+                            </div>
+                            <h4>Arijit Singh</h4>
+                            <p>Artist</p>
+                        </div>
+                        <div class="right-container">
+                            <img class="round-img"
+                                src="https://assets.telegraphindia.com/telegraph/2023/Dec/1701611788_1701526390_pg-2.jpg"
+                                alt="">
+                            <div class="artist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Circle -->
+                                    <circle cx="50" cy="50" r="45" fill="rgb(11, 157, 177)" stroke="rgb(11, 157, 177)"
+                                        stroke-width="3" />
+                                    <!-- Triangle Play Button -->
+                                    <polygon points="40,30 40,70 70,50" fill="black" />
+                                </svg>
+                            </div>
+                            <h4>Shreya Ghosal</h4>
+                            <p>Artist</p>
+                        </div>
+                        <div class="right-container">
+                            <img class="round-img"
+                                src="https://cdn.siasat.com/wp-content/uploads/2024/11/atif-saudi.jpg" alt="">
+                            <div class="artist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Circle -->
+                                    <circle cx="50" cy="50" r="45" fill="rgb(11, 157, 177)" stroke="rgb(11, 157, 177)"
+                                        stroke-width="3" />
+                                    <!-- Triangle Play Button -->
+                                    <polygon points="40,30 40,70 70,50" fill="black" />
+                                </svg>
+                            </div>
+                            <h4>Atif Aslam</h4>
+                            <p>Artist</p>
+                        </div>
+                        <!-- <div class="right-container">
+                            <img class="round-img" src="https://img.jagranjosh.com/images/2022/January/612022/AR-Rahman-net-worth-birth-age-real-name-full-name-wife-children-oscars.jpg" alt="">
+                            <div class="artist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Circle -->
+                        <!-- <circle cx="50" cy="50" r="45" fill="rgb(23, 173, 23)" stroke="rgb(23, 173, 23)"
+                                        stroke-width="3" />
+                                    <!-- Triangle Play Button -->
+                        <!-- <polygon points="40,30 40,70 70,50" fill="black" /> -->
+                        <!-- </svg>
+                            </div>
+                            <h4>A.R Rahman</h4>
+                            <p>Artist</p>
+                        </div>
+                        <div class="right-container">
+                            <img class="round-img" src="https://www.hindustantimes.com/ht-img/img/2024/03/31/1600x900/shaan_1706692704615_1711874185757.jpg" alt="">
+                            <div class="artist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> -->
+                        <!-- Circle -->
+                        <!-- <circle cx="50" cy="50" r="45" fill="rgb(23, 173, 23)" stroke="rgb(23, 173, 23)"
+                                        stroke-width="3" /> -->
+                        <!-- Triangle Play Button -->
+                        <!-- <polygon points="40,30 40,70 70,50" fill="black" /> -->
+                        <!-- </svg>
+                            </div>
+                            <h4>Shaan</h4>
+                            <p>Artist</p>
+                        </div>
+                        <div class="right-container">
+                            <img class="round-img" src="https://images.news18.com/ibnlive/uploads/2023/01/sunidhi-chauhan-2-16739536684x3.jpg" alt="">
+                            <div class="artist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> -->
+                        <!-- Circle -->
+                        <!-- <circle cx="50" cy="50" r="45" fill="rgb(23, 173, 23)" stroke="rgb(23, 173, 23)" -->
+                        <!-- stroke-width="3" /> -->
+                        <!-- Triangle Play Button -->
+                        <!-- <polygon points="40,30 40,70 70,50" fill="black" /> -->
+                        <!-- </svg>
+                            </div>
+                            <h4>Sunidhi Chauhan</h4>
+                            <p>Artist</p>
+                        </div>  -->
+                    </div>
+                </div>
+                <div class="spotify-playlist">
+                    <h3 class="right-heading">Explore More!</h3>
+                    <div class="playlist card-container">
+                        <div class="playlist-container right-container bg-grey">
+                            <img class="square-img"
+                                src="https://www.alwaysonpurpose.com/wp-content/uploads/2019/11/happypeople-1024x679.jpg"
+                                alt="">
+                            <div class="playlist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Circle -->
+                                    <circle cx="50" cy="50" r="45" fill="rgb(204, 194, 10)" stroke="rgb(204, 194, 10)"
+                                        stroke-width="3" />
+                                    <!-- Triangle Play Button -->
+                                    <polygon points="40,30 40,70 70,50" fill="black" />
+                                </svg>
+                            </div>
+                            <div class="msg">
+                                <h4>Happy Hits!</h4>
+                                <p style="font-size: small;">Hits to boost your mood and fill you with happiness.</p>
+                            </div>
+                        </div>
+                        <div class="playlist-container right-container bg-grey">
+                            <img class="square-img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXfTsl2gh2x5oA6PXoTcA1nVcF6JYM1R8PhQ&s"
+                                alt="">
+                            <div class="playlist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Circle -->
+                                    <circle cx="50" cy="50" r="45" fill="rgb(204, 194, 10)" stroke="rgb(204, 194, 10)"
+                                        stroke-width="3" />
+                                    <!-- Triangle Play Button -->
+                                    <polygon points="40,30 40,70 70,50" fill="black" />
+                                </svg>
+                            </div>
+                            <div class="msg">
+                                <h4>Calming Acoustic</h4>
+                                <p style="font-size: small;">keep calm with instrumental acoustic.</p>
+                            </div>
+                        </div>
+                        <div class="playlist-container right-container bg-grey">
+                            <img class="square-img"
+                                src="https://i1.sndcdn.com/artworks-FdytyRF2SOGTHoWO-IlM3MA-t500x500.jpg" alt="">
+                            <div class="playlist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Circle -->
+                                    <circle cx="50" cy="50" r="45" fill="rgb(204, 194, 10)" stroke="rgb(204, 194, 10)"
+                                        stroke-width="3" />
+                                    <!-- Triangle Play Button -->
+                                    <polygon points="40,30 40,70 70,50" fill="black" />
+                                </svg>
+                            </div>
+                            <div class="msg">
+                                <h4>Lofi Chill</h4>
+                                <p style="font-size: small;">lazy slow lofi beats for laid-back moments.</p>
+                            </div>
+                        </div>
+                        <div class="playlist-container right-container bg-grey">
+                            <img class="square-img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrsvSpr-dzgumW_HzBa4U34pZiG6cPZt4aGg&s"
+                                alt="">
+                            <div class="playlist-play">
+                                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Circle -->
+                                    <circle cx="50" cy="50" r="45" fill="rgb(204, 194, 10)" stroke="rgb(204, 194, 10)"
+                                        stroke-width="3" />
+                                    <!-- Triangle Play Button -->
+                                    <polygon points="40,30 40,70 70,50" fill="black" />
+                                </svg>
+                            </div>
+                            <div class="msg">
+                                <h4>Peace</h4>
+                                <p style="font-size: small;">Peaceful songs to help you slower down, and breathe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="control">
+                    <img id="previous" src="   https://cdn-icons-png.flaticon.com/512/2723/2723003.png "
+                        class="img-small invert">
+                    <img id="play" src="   https://cdn-icons-png.flaticon.com/512/483/483054.png "
+                        class="img-small invert">
+                    <img id="pause" src="   https://cdn-icons-png.flaticon.com/512/2088/2088562.png "
+                        class="img-small invert">
+                    <img id="next" src="   https://cdn-icons-png.flaticon.com/512/2722/2722998.png "
+                        class="img-small invert">
+                </div>
+                <div class="seek">
+                    <div class="current-song g-fonts">
+                        <div id="now-playing">Song Name - Artist</div>
+                        <div id="duration">00:00/00:00</div>
+                    </div>
+                    <div id="seekbar">
+                        <span id="seek-circle"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
